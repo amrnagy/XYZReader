@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\activity_article_list.xml",
+        "source": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\layout\\activity_article_list.xml"
+    },
+    {
+        "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\activity_article_detail.xml",
+        "source": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\layout\\activity_article_detail.xml"
+    },
+    {
+        "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_article.xml",
+        "source": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\layout\\list_item_article.xml"
+    },
+    {
+        "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_article_detail.xml",
+        "source": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\layout\\fragment_article_detail.xml"
+    }
+]

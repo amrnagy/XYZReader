@@ -1,0 +1,600 @@
+[
+    {
+        "outputFile": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 207,
+                        "endColumn": 44,
+                        "endOffset": 247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 42,
+                    "endOffset": 138
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 903,
+                        "endColumn": 42,
+                        "endOffset": 941
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 143,
+                    "endColumn": 48,
+                    "endOffset": 187
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 705,
+                        "endColumn": 48,
+                        "endOffset": 749
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 192,
+                    "endColumn": 46,
+                    "endOffset": 234
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 856,
+                        "endColumn": 46,
+                        "endOffset": 898
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 239,
+                    "endColumn": 47,
+                    "endOffset": 282
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 755,
+                        "endColumn": 47,
+                        "endOffset": 798
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 287,
+                    "endColumn": 52,
+                    "endOffset": 335
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 803,
+                        "endColumn": 52,
+                        "endOffset": 851
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 468,
+                    "endColumn": 56,
+                    "endOffset": 520
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 700,
+                        "endColumn": 56,
+                        "endOffset": 752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 525,
+                    "endColumn": 52,
+                    "endOffset": 573
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 90,
+                        "endColumn": 52,
+                        "endOffset": 138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 578,
+                    "endColumn": 53,
+                    "endOffset": 627
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 646,
+                        "endColumn": 53,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 632,
+                    "endColumn": 55,
+                    "endOffset": 683
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 437,
+                        "endColumn": 55,
+                        "endOffset": 488
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 688,
+                    "endColumn": 75,
+                    "endOffset": 759
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 304,
+                        "endColumn": 75,
+                        "endOffset": 375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 764,
+                    "endColumn": 56,
+                    "endOffset": 816
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 380,
+                        "endColumn": 56,
+                        "endOffset": 432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 821,
+                    "endColumn": 65,
+                    "endOffset": 882
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 580,
+                        "endColumn": 65,
+                        "endOffset": 641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 887,
+                    "endColumn": 58,
+                    "endOffset": 941
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 521,
+                        "endColumn": 58,
+                        "endOffset": 575
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 946,
+                    "endColumn": 51,
+                    "endOffset": 993
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 252,
+                        "endColumn": 51,
+                        "endOffset": 299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 998,
+                    "endColumn": 53,
+                    "endOffset": 1047
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 36,
+                        "endColumn": 53,
+                        "endOffset": 85
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1052,
+                    "endColumn": 43,
+                    "endOffset": 1091
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 240,
+                        "endColumn": 43,
+                        "endOffset": 279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1096,
+                    "endColumn": 41,
+                    "endOffset": 1133
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 41,
+                        "endOffset": 375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1138,
+                    "endColumn": 53,
+                    "endOffset": 1187
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 284,
+                        "endColumn": 53,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1192,
+                    "endColumn": 46,
+                    "endOffset": 1234
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 34,
+                        "endColumn": 46,
+                        "endOffset": 76
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1239,
+                    "endColumn": 54,
+                    "endOffset": 1289
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 81,
+                        "endColumn": 54,
+                        "endOffset": 131
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1294,
+                    "endColumn": 95,
+                    "endOffset": 1385
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 95,
+                        "endOffset": 234
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1390,
+                    "endColumn": 49,
+                    "endOffset": 1435
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\macro_layout.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 136,
+                        "endColumn": 49,
+                        "endOffset": 181
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1440,
+                    "endColumn": 50,
+                    "endOffset": 1486
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 136,
+                        "endColumn": 50,
+                        "endOffset": 182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1491,
+                    "endColumn": 52,
+                    "endOffset": 1539
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 187,
+                        "endColumn": 52,
+                        "endOffset": 235
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1544,
+                    "endColumn": 46,
+                    "endOffset": 1586
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 240,
+                        "endColumn": 46,
+                        "endOffset": 282
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1591,
+                    "endColumn": 47,
+                    "endOffset": 1634
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 47,
+                        "endOffset": 60
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1639,
+                    "endColumn": 33,
+                    "endOffset": 1668
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 288,
+                        "endColumn": 33,
+                        "endOffset": 317
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1673,
+                    "endColumn": 69,
+                    "endOffset": 1738
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 65,
+                        "endColumn": 69,
+                        "endOffset": 130
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1743,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 1833
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 706,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 796
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1838,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 1962
+                },
+                "from": {
+                    "file": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 802,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 926
+                    }
+                }
+            }
+        ]
+    }
+]
