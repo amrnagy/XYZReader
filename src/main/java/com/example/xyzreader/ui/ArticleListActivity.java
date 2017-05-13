@@ -7,30 +7,36 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v13.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.text.format.DateUtils;
 import android.util.Log;
-import android.util.TypedValue;
+import android.view.Display;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
 import com.example.xyzreader.data.UpdaterService;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import static com.example.xyzreader.R.id.toolbar;
 
 /**
  * An activity representing a list of Articles. This activity has different presentations for
@@ -38,39 +44,128 @@ import java.util.GregorianCalendar;
  * touched, lead to a {@link ArticleDetailActivity} representing item details. On tablets, the
  * activity presents a grid of items as cards.
  */
-public class ArticleListActivity extends ActionBarActivity implements
-        LoaderManager.LoaderCallbacks<Cursor> {
+public class ArticleListActivity extends AppCompatActivity implements
+        LoaderManager.LoaderCallbacks<Cursor>, NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String TAG = ArticleListActivity.class.toString();
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
 
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss");
-    // Use default locale format
-    private SimpleDateFormat outputFormat = new SimpleDateFormat();
-    // Most time functions can only handle 1902 - 2037
-    private GregorianCalendar START_OF_EPOCH = new GregorianCalendar(2,1,1);
+    private NavigationView navigationView;
+    private DrawerLayout drawer;
+    private View navHeader;
+    private ImageView imgProfile;
+
+    /***
+     * Load navigation menu header information
+     * like background image, profile image
+     * name, website, notifications action view (dot)
+     */
+    private void loadNavHeader() {
+
+        // Loading profile image
+        Glide.with(this).load(R.drawable.logo)
+                .crossFade()
+                .thumbnail(0.5f)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(imgProfile);
+    }
+
+
+    // This method will trigger on item Click of navigation menu
+    @Override
+    public boolean onNavigationItemSelected(MenuItem menuItem) {
+
+        //Check to see which item was being clicked and perform appropriate action
+        switch (menuItem.getItemId()) {
+            //Replacing the my_view content with ContentFragment Which is our Inbox View;
+            case R.id.nav_home:
+                startActivity(new Intent(this, ArticleListActivity.class));
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawers();
+                }
+                return true;
+            case  R.id.nav_about:
+                startActivity(new Intent(this, AboutActivity.class));
+                if (drawer.isDrawerOpen(GravityCompat.START)) {
+                    drawer.closeDrawers();
+                }
+                return true;
+        }
+
+        //Checking if the item is in checked state or not, if not make it in checked state
+        if (menuItem.isChecked()) {
+            menuItem.setChecked(false);
+        } else {
+            menuItem.setChecked(true);
+        }
+        menuItem.setChecked(true);
+
+
+        return true;
+    }
+
+
+
+
+    @Override
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawers();
+            return;
+        }
+
+        super.onBackPressed();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
-
-
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
-
+        mToolbar = (Toolbar) findViewById(toolbar);
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
-
+        mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.primary));
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.my_navigation_view);
+        navHeader = navigationView.getHeaderView(0);
+        imgProfile = (ImageView) navHeader.findViewById(R.id.account_profile);
+
+        // Navigation view header
+        navigationView.setNavigationItemSelectedListener(this);
+
+        loadNavHeader();
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this,
+                drawer, mToolbar, R.string.open_Drawer, R.string.close_Drawer) {
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+                // Code here will be triggered once the drawer closes as we dont want anything to happen so we leave this blank
+                super.onDrawerClosed(drawerView);
+            }
+
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                // Code here will be triggered once the drawer open as we dont want anything to happen so we leave this blank
+                super.onDrawerOpened(drawerView);
+            }
+        };
+
+
+        //Setting the actionbarToggle to drawer layout
+        drawer.setDrawerListener(actionBarDrawerToggle);
+
+        //calling sync state is necessary or else your hamburger icon wont show up
+        actionBarDrawerToggle.syncState();
+
         getLoaderManager().initLoader(0, null, this);
 
         if (savedInstanceState == null) {
             refresh();
         }
     }
+
 
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));
@@ -81,6 +176,7 @@ public class ArticleListActivity extends ActionBarActivity implements
         super.onStart();
         registerReceiver(mRefreshingReceiver,
                 new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
+
     }
 
     @Override
@@ -115,9 +211,22 @@ public class ArticleListActivity extends ActionBarActivity implements
         Adapter adapter = new Adapter(cursor);
         adapter.setHasStableIds(true);
         mRecyclerView.setAdapter(adapter);
-        int columnCount = getResources().getInteger(R.integer.list_column_count);
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+
+        int mColumnWidth = 300;
+        int columnCount = width / mColumnWidth;
+
+        Log.e("Width", "width  : " + columnCount);
+        int spanCount = Math.max(1, columnCount);
+
         StaggeredGridLayoutManager sglm =
-                new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
+                new StaggeredGridLayoutManager(spanCount, StaggeredGridLayoutManager.VERTICAL);
+
+        //  GridLayoutManager llm=new GridLayoutManager(ArticleListActivity.this,1);
         mRecyclerView.setLayoutManager(sglm);
     }
 
@@ -146,44 +255,37 @@ public class ArticleListActivity extends ActionBarActivity implements
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(Intent.ACTION_VIEW,
-                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
+                    Intent intent = new Intent(Intent.ACTION_VIEW,
+                            ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
+                    //    ActivityOptionsCompat options = ActivityOptionsCompat.
+                    //    makeSceneTransitionAnimation(this, (View)ivProfile, "profile");
+                    // Get the transition name from the string
+                    String transitionName = getString(R.string.transition_photo);
+
+                    ActivityOptionsCompat options =
+
+                            ActivityOptionsCompat.makeSceneTransitionAnimation(ArticleListActivity.this,
+                                    view,   // Starting view
+                                    transitionName    // The String
+                            );
+                    ActivityCompat.startActivity(ArticleListActivity.this, intent, options.toBundle());
+
                 }
             });
             return vh;
-        }
-
-        private Date parsePublishedDate() {
-            try {
-                String date = mCursor.getString(ArticleLoader.Query.PUBLISHED_DATE);
-                return dateFormat.parse(date);
-            } catch (ParseException ex) {
-                Log.e(TAG, ex.getMessage());
-                Log.i(TAG, "passing today's date");
-                return new Date();
-            }
         }
 
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
             mCursor.moveToPosition(position);
             holder.titleView.setText(mCursor.getString(ArticleLoader.Query.TITLE));
-            Date publishedDate = parsePublishedDate();
-            if (!publishedDate.before(START_OF_EPOCH.getTime())) {
-
-                holder.subtitleView.setText(Html.fromHtml(
-                        DateUtils.getRelativeTimeSpanString(
-                                publishedDate.getTime(),
-                                System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
-                                DateUtils.FORMAT_ABBREV_ALL).toString()
-                                + "<br/>" + " by "
-                                + mCursor.getString(ArticleLoader.Query.AUTHOR)));
-            } else {
-                holder.subtitleView.setText(Html.fromHtml(
-                        outputFormat.format(publishedDate)
-                        + "<br/>" + " by "
-                        + mCursor.getString(ArticleLoader.Query.AUTHOR)));
-            }
+            holder.subtitleView.setText(
+                    DateUtils.getRelativeTimeSpanString(
+                            mCursor.getLong(ArticleLoader.Query.PUBLISHED_DATE),
+                            System.currentTimeMillis(), DateUtils.HOUR_IN_MILLIS,
+                            DateUtils.FORMAT_ABBREV_ALL).toString()
+                            + " by "
+                            + mCursor.getString(ArticleLoader.Query.AUTHOR));
             holder.thumbnailView.setImageUrl(
                     mCursor.getString(ArticleLoader.Query.THUMB_URL),
                     ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());

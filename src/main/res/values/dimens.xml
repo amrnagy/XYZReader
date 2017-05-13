@@ -4,8 +4,41 @@
     <dimen name="detail_body_text_size">22sp</dimen>
     <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
 
-    <dimen name="fab_elevation">2dp</dimen>
-    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="elevation_fab">2dp</dimen>
+    <dimen name="fab_press_translation_z">12dp</dimen>
+
+    <dimen name="main_margin">16dp</dimen>
+
+
+    <dimen name="action_bar_height">48dp</dimen>
+
     <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_layout_margin">16dp</dimen>
+
+    <dimen name="fab_pressedTranslateionz">12dp</dimen>
+
+    <dimen name="detail_backdrop_height">48dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+    <dimen name="title_margin">16dp</dimen>
+    <dimen name="title_margin_start">48dp</dimen>
+
+    <dimen name="header_padding_sides">16dp</dimen>
+    <dimen name="header_padding_spacer">24dp</dimen>
+
+    <dimen name="text_margin">16dp</dimen><!-- Default screen margins, per the Android Design guidelines.
+-->
+    <dimen name="nav_header_verticalspacing">16dp</dimen>
+    <dimen name="nav_headerHeight">160dp</dimen><!-- Default screen margins, per the Android Design guidelines.
+-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="imageView_list_itemmaxheight">180dp</dimen>
+    <dimen name="controle_16dp">16dp</dimen>
+    <dimen name="offset_y">400dp</dimen>
+    <dimen name="nav_drawer_profile_image_size">70dp</dimen>
+    <dimen name="main_header_textsize">14sp</dimen>
+    <dimen name="detail_header_text_size">30sp</dimen>
+    <dimen name="main_body_text_size">14sp</dimen>
 
 </resources>

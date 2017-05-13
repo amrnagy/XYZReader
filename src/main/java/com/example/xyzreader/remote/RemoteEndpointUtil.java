@@ -30,6 +30,7 @@ public class RemoteEndpointUtil {
 
         // Parse JSON
         try {
+            Log.e("New data  !!!!!",itemsJson);
             JSONTokener tokener = new JSONTokener(itemsJson);
             Object val = tokener.nextValue();
             if (!(val instanceof JSONArray)) {

@@ -1,5 +1,13 @@
 [
     {
+        "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "D:\\Users\\Amr\\.android\\build-cache\\ed51e568b9ca46e2fcb9aaebdfa4282bc0e41c90\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "D:\\Users\\Amr\\.android\\build-cache\\ed51e568b9ca46e2fcb9aaebdfa4282bc0e41c90\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
         "merged": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\build\\intermediates\\res\\merged\\debug\\anim-v21\\fab_state_list_anim.xml",
         "source": "G:\\Google\\NanoDegree\\NanoProjects\\xyz-reader-starter-code-master\\xyz-reader-starter-code-master\\XYZReader\\src\\main\\res\\anim-v21\\fab_state_list_anim.xml"
     }
