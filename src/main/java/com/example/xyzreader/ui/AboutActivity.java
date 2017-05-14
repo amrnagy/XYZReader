@@ -79,7 +79,7 @@ public class AboutActivity extends AppCompatActivity implements  NavigationView.
     @Override
     public boolean onNavigationItemSelected(MenuItem menuItem) {
 
-        //Check to see which item was being clicked and perform appropriate action
+        //Check to see which item was being clicked  and perform appropriate action
         switch (menuItem.getItemId()) {
             //Replacing the my_view content with ContentFragment Which is our Inbox View;
             case R.id.nav_home:
